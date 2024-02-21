@@ -24,8 +24,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <title>On the Safety Concerns of Deploying LLMs/VLMs in Robotics</title>
+  <link rel="icon" type="image/x-icon" href="static/images/icon.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -137,22 +137,25 @@
 </section>
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/twitter_safety_paper2.gif"
-        type="video/gif">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+  <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- First Image with adjusted size and centered -->
+      <div style="margin-bottom: 0px; text-align: center;"> <!-- Adjust the margin as needed -->
+        <img src="static/images/teaser.png" alt="Teaser Image" style="width: 500px; display: block; margin: auto;"> <!-- Adjust width as needed -->
+        <!-- Caption with constrained width -->
+        <div style="max-width: 800px; margin: auto;"> <!-- Adjust max-width as needed -->
+          <h2 class="subtitle has-text-centered">
+            Our experiments expose vulnerabilities in state-of-the-art LLMs/VLMs for robotics, particularly to
+            adversarial attacks, underscoring the need for further research to ensure the safety and reliability
+             of using language models in robotic applications.
+          </h2>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
+
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -162,10 +165,25 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-           In this paper, we highlight the critical issues of robustness and safety associated with integrating large language models (LLMs) and vision-language models (VLMs) into robotics applications. Recent works have focused on using LLMs and VLMs to improve the performance of robotics tasks, such as manipulation, navigation, etc. However, such integration can introduce significant vulnerabilities, in terms of their susceptibility to adversarial attacks due to the language models, potentially leading to catastrophic consequences. By examining recent works at the interface of LLMs/VLMs and robotics, we show that it is easy to manipulate or misguide the robot's actions, leading to safety hazards. We define and provide examples of several plausible adversarial attacks, and conduct experiments on three prominent robot frameworks integrated with a language model, including KnowNo VIMA, and Instruct2Act, to assess their susceptibility to these attacks. Our empirical findings reveal a striking vulnerability of LLM/VLM-robot integrated systems: simple adversarial attacks can significantly undermine the effectiveness of LLM/VLM-robot integrated systems. Specifically, our data demonstrate an average performance deterioration of 21.2% under prompt attacks and a more alarming 30.2% under perception attacks. These results underscore the critical need for robust countermeasures to ensure the safe and reliable deployment of the advanced LLM/VLM-based robotic systems.
+           In this paper, we highlight the critical issues of robustness and safety associated with integrating large
+            language models (LLMs) and vision-language models (VLMs) into robotics applications. Recent works have
+            focused on using LLMs and VLMs to improve the performance of robotics tasks, such as manipulation,
+            navigation, etc. However, such integration can introduce significant vulnerabilities, in terms of their
+            susceptibility to adversarial attacks due to the language models, potentially leading to catastrophic
+            consequences. By examining recent works at the interface of LLMs/VLMs and robotics, we show that it is easy
+            to manipulate or misguide the robot's actions, leading to safety hazards. We define and provide examples of
+            several plausible adversarial attacks, and conduct experiments on three prominent robot frameworks
+            integrated with a language model, including KnowNo VIMA, and Instruct2Act, to assess their susceptibility
+            to these attacks. Our empirical findings reveal a striking vulnerability of LLM/VLM-robot integrated
+            systems: simple adversarial attacks can significantly undermine the effectiveness of LLM/VLM-robot
+            integrated systems. Specifically, our data demonstrate an average performance deterioration of 21.2% under
+            prompt attacks and a more alarming 30.2% under perception attacks. These results underscore the critical
+            need for robust countermeasures to ensure the safe and reliable deployment of the advanced
+            LLM/VLM-based robotic systems.
           <br>
             <br>
-            <b>TL, DR:</b> By examining recent works at the interface of LLMs/VLMs and robotics, we show that it is easy to manipulate or misguide the robot's actions, leading to safety hazards.
+            <b>TL, DR:</b> By examining recent works at the interface of LLMs/VLMs and robotics, we show that it is
+            easy to manipulate or misguide the robot's actions, leading to safety hazards.
           </p>
         </div>
       </div>
@@ -174,6 +192,30 @@
 </section>
 <!-- End paper abstract -->
 
+
+<!-- Youtube video -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Problem Formulation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+
+          <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+            <source src="static/videos/problem.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+        <b>The Problem: </b> The use of LLMs/VLMs has revolutionized how we interact with robots,
+        offering unprecedented levels of understanding and responsiveness. But at what cost?
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Image carousel -->
 <section class="hero is-small">

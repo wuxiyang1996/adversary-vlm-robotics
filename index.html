@@ -319,8 +319,9 @@
 
        <br>
         <div class="text-content" style="text-align: left; margin-bottom: 30px;">
-        <b>Case 1: Prompt Attack: Adjective Rephrasing. </b>
-          <br>
+        <b class="title is-4">Case 1: Prompt Attack: Adjective Rephrasing </b>
+          </div>
+        <div class="text-content" style="text-align: left; margin-bottom: 30px;">
         <b>Prompt: </b> Put the green and purple stripe letter R into the red pallet.
          <br>
         <b>Rephrased Prompt: </b> Place the verdant and lavender striped alphabet character R into the crimson palette.
@@ -344,9 +345,38 @@
                 <img src="static/showcases/Adjective_Rephrasing.gif" alt="Adjective Rephrasing" style="width: 400px; display: block; margin: auto;">
               </div>
                 </div>
-
             </div>
           </div>
+
+             <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+            <b class="title is-4">Case 2: Perception Attack: Object Addition in Segmentation </b>
+          </div>
+        <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+        <b>Prompt: </b> Put the green and purple stripe letter R into the red pallet.
+         <br>
+        <b>Rephrased Prompt: </b> N/A.
+          <br>
+        <b>Failure Reason: </b> Fail to grab the object.
+        </div>
+          <div class="row">
+            <div class="column">
+              <div class="content">
+              <p align="center"><b>No Attack</b></p>
+              <div class="publication-video">
+                <img src="static/showcases/No_Attack.gif" alt="No Attack" style="width: 400px; display: block; margin: auto;">
+              </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="content">
+              <p align="center"><b>Object Addition in Segmentation</b></p>
+              <div class="publication-video">
+                <img src="static/showcases/Adjective_Rephrasing.gif" alt="Adjective Rephrasing" style="width: 400px; display: block; margin: auto;">
+              </div>
+                </div>
+            </div>
+          </div>
+<!--          </div>-->
         <br>
          <br>
     </div>
@@ -357,87 +387,87 @@
 
 
 
-<section class="hero  is-small">
-  <div class="container is-max-desktop">
+<!--<section class="hero  is-small">-->
+<!--  <div class="container is-max-desktop">-->
 
-    <div class="columns is-centered">
+<!--    <div class="columns is-centered">-->
 
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <img src="static/showcases/No_Attack.gif" alt="No Attack" style="width: 400px; display: block; margin: auto;">
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
+<!--      &lt;!&ndash; Visual Effects. &ndash;&gt;-->
+<!--      <div class="column">-->
+<!--        <div class="content">-->
+<!--          <h2 class="title is-3">Visual Effects</h2>-->
+<!--          <p>-->
+<!--            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect-->
+<!--            would be impossible without nerfies since it would require going through a wall.-->
+<!--          </p>-->
+<!--          <img src="static/showcases/No_Attack.gif" alt="No Attack" style="width: 400px; display: block; margin: auto;">-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      &lt;!&ndash;/ Visual Effects. &ndash;&gt;-->
 
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <img src="static/showcases/Adjective_Rephrasing.gif" alt="Adjective Rephrasing" style="width: 400px; display: block; margin: auto;">
-          </div>
+<!--      &lt;!&ndash; Matting. &ndash;&gt;-->
+<!--      <div class="column">-->
+<!--        <h2 class="title is-3">Matting</h2>-->
+<!--        <div class="columns is-centered">-->
+<!--          <div class="column content">-->
+<!--            <p>-->
+<!--              As a byproduct of our method, we can also solve the matting problem by ignoring-->
+<!--              samples that fall outside of a bounding box during rendering.-->
+<!--            </p>-->
+<!--            <img src="static/showcases/Adjective_Rephrasing.gif" alt="Adjective Rephrasing" style="width: 400px; display: block; margin: auto;">-->
+<!--          </div>-->
 
-        </div>
-      </div>
-    </div>
-    <!--/ Matting. -->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash;/ Matting. &ndash;&gt;-->
 
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
+<!--    &lt;!&ndash; Animation. &ndash;&gt;-->
+<!--    <div class="columns is-centered">-->
+<!--      <div class="column is-full-width">-->
+<!--        <h2 class="title is-3">Animation</h2>-->
 
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
+<!--        &lt;!&ndash; Interpolating. &ndash;&gt;-->
+<!--        <h3 class="title is-4">Interpolating states</h3>-->
+<!--        <div class="content has-text-justified">-->
+<!--          <p>-->
+<!--            We can also animate the scene by interpolating the deformation latent codes of two input-->
+<!--            frames. Use the slider here to linearly interpolate between the left frame and the right-->
+<!--            frame.-->
+<!--          </p>-->
+<!--        </div>-->
+<!--        <div class="columns is-vcentered interpolation-panel">-->
+<!--          <div class="column is-3 has-text-centered">-->
+<!--            <img src="./static/images/interpolate_start.jpg"-->
+<!--                 class="interpolation-image"-->
+<!--                 alt="Interpolate start reference image."/>-->
+<!--            <p>Start Frame</p>-->
+<!--          </div>-->
+<!--          <div class="column interpolation-video-column">-->
+<!--            <div id="interpolation-image-wrapper">-->
+<!--              Loading...-->
+<!--            </div>-->
+<!--            <input class="slider is-fullwidth is-large is-info"-->
+<!--                   id="interpolation-slider"-->
+<!--                   step="1" min="0" max="100" value="0" type="range">-->
+<!--          </div>-->
+<!--          <div class="column is-3 has-text-centered">-->
+<!--            <img src="./static/images/interpolate_end.jpg"-->
+<!--                 class="interpolation-image"-->
+<!--                 alt="Interpolation end reference image."/>-->
+<!--            <p class="is-bold">End Frame</p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <br/>-->
+<!--        &lt;!&ndash;/ Interpolating. &ndash;&gt;-->
 
 
-      </div>
-    </div>
-    <!--/ Animation. -->
+<!--      </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash;/ Animation. &ndash;&gt;-->
 
-  </div>
-</section>
+<!--  </div>-->
+<!--</section>-->
 
 <!--&lt;!&ndash; Youtube video &ndash;&gt;-->
 <!--<section class="hero is-small is-light">-->

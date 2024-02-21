@@ -198,7 +198,7 @@
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
-      <h2 class="title is-3">Problem Formulation</h2>
+      <h2 class="title is-3">The Problem</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
 
@@ -210,53 +210,12 @@
         </div>
       </div>
       <div class="text-content" style="text-align: left; margin-bottom: 30px;">
-        <b>The Problem: </b> The use of LLMs/VLMs has revolutionized how we interact with robots,
+        The use of LLMs/VLMs has revolutionized how we interact with robots,
         offering unprecedented levels of understanding and responsiveness. But at what cost?
       </div>
     </div>
   </div>
 </section>
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
 
 
 <!-- Youtube video -->
@@ -264,54 +223,147 @@
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+      <h2 class="title is-3">The Risk</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+
+          <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+            <source src="static/videos/method.mp4"
+            type="video/mp4">
+          </video>
         </div>
+      </div>
+      <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+        We uncover how these advancements while being impressive, expose robotic systems to even simple
+        adversarial attacks, threatening their reliability and safety.
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
 
 
-<!-- Video carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
+      <!-- Paper video. -->
+      <h2 class="title is-3">The Attack</h2>
+      <div style="margin-bottom: 0px; text-align: center;"> <!-- Adjust the margin as needed -->
+        <img src="static/images/method.png" alt="Teaser Image" style="width: 1000px; display: block; margin: auto;"> <!-- Adjust width as needed -->
+        <!-- Caption with constrained width -->
+      </div>
+      <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+        <b>Multi-modal Attacks to LLMs/VLMs in Robotic Applications.</b> The middle pipeline is an abstract robotic
+        system with LLMs/VLMs, and multi-modal attacks are applied at visual and text prompts. The left-hand side provides
+        different attacks to images, such as reducing image quality, applying transformation, and adding new objects.
+        The right-hand side shows different types of attacks in text, including simple rephrasing, stealth rephrasing,
+        extension rephrasing, and rephrasing of adjectives and nouns.
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
+
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">The Evidence</h2>
+      <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+        Through rigorous testing on <a href="https://robot-help.github.io/" target="_blank">KnowNo</a>,
+        <a href="https://vimalabs.github.io/" target="_blank">VIMA</a>,
+        and <a href="https://github.com/OpenGVLab/Instruct2Act" target="_blank">Instruct2act</a>, we demonstrate
+        the ease with which these AI-driven robots can be manipulated, urging the need for a comprehensive reassessment
+        of how we develop and deploy these technologies.
+      </div>
+      <div style="margin-bottom: 0px; text-align: center;"> <!-- Adjust the margin as needed -->
+        <img src="static/images/result_1.png" alt="Histogram" style="width: 800px; display: block; margin: auto;"> <!-- Adjust width as needed -->
+        <!-- Caption with constrained width -->
+        <div style="max-width: 750px; margin: auto;"> <!-- Adjust max-width as needed -->
+        </div>
+      </div>
+      <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+      To provide a preview of our findings, we showcase the reduction in accuracy of the LLMs/VLMs used in robotics,
+      under various adversarial attacks. These results are presented across three different tasks: Visual Manipulation
+      (pick and place), Scene Understanding (move objects with specific textures to target place given the scene image),
+      and Rearrange (move objects to target places given the scene image), with the accuracy decrements averaged for
+      each category of attack.
+      </div>
+      <br>
+      <div style="margin-bottom: 0px; text-align: center;"> <!-- Adjust the margin as needed -->
+        <img src="static/images/result_2.png" alt="Table" style="width: 800px; display: block; margin: auto;"> <!-- Adjust width as needed -->
+        <!-- Caption with constrained width -->
+        <div style="max-width: 750px; margin: auto;"> <!-- Adjust max-width as needed -->
+        </div>
+      </div>
+      <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+        <b>Attack Results of <a href="https://vimalabs.github.io/" target="_blank">VIMA</a> over VIMA-Bench.</b> We perform
+        attack experiments over 3 tasks Visual Manipulation, Scene Understanding and Rearrange, whileVisual Manipulation
+        has been made under $3$ difficulty levels: Placement Generalization, Combinatorial Generalization and Novel
+        Object Generalization.</div>
+
+      <div class="text-content" style="text-align: left; margin-bottom: 30px;">
+        <b>Conclusion.</b> VIMA framework is more vulnerable under all prompt attacks (except in the Scene Understanding
+        task), and some perception attacks like transformation attacks, and the object addition attack in the
+        segmentation image.</div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!--&lt;!&ndash; Youtube video &ndash;&gt;-->
+<!--<section class="hero is-small is-light">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      &lt;!&ndash; Paper video. &ndash;&gt;-->
+<!--      <h2 class="title is-3">Video Presentation</h2>-->
+<!--      <div class="columns is-centered has-text-centered">-->
+<!--        <div class="column is-four-fifths">-->
+<!--          -->
+<!--          <div class="publication-video">-->
+<!--            &lt;!&ndash; Youtube embed code here &ndash;&gt;-->
+<!--            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+<!--&lt;!&ndash; End youtube video &ndash;&gt;-->
+
+
+<!--&lt;!&ndash; Video carousel &ndash;&gt;-->
+<!--<section class="hero is-small">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      <h2 class="title is-3">Another Carousel</h2>-->
+<!--      <div id="results-carousel" class="carousel results-carousel">-->
+<!--        <div class="item item-video1">-->
+<!--          <video poster="" id="video1" autoplay controls muted loop height="100%">-->
+<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
+<!--            <source src="static/videos/carousel1.mp4"-->
+<!--            type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--        <div class="item item-video2">-->
+<!--          <video poster="" id="video2" autoplay controls muted loop height="100%">-->
+<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
+<!--            <source src="static/videos/carousel2.mp4"-->
+<!--            type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--        <div class="item item-video3">-->
+<!--          <video poster="" id="video3" autoplay controls muted loop height="100%">\-->
+<!--            &lt;!&ndash; Your video file here &ndash;&gt;-->
+<!--            <source src="static/videos/carousel3.mp4"-->
+<!--            type="video/mp4">-->
+<!--          </video>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+<!--&lt;!&ndash; End video carousel &ndash;&gt;-->
 
 
 
